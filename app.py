@@ -7,5 +7,5 @@ def index():
     return render_template('index.html')
 
 @app.route('/project/')
-def index():
+def project():
     return render_template('project.html')

@@ -6,12 +6,82 @@
     <title>NYC AirBnB Analysis</title>
 </head>
 <style>
+    .header-container {
+        text-align: center;
+        padding: 1rem;
+        background-color: #f8f9fa;
+        border-bottom: 1px solid #e0e0e0;
+    }
 
+    .main-container {
+        max-width: 800px;
+        margin: 2rem auto;
+        padding: 0 1rem;
+    }
+
+    .responsive-image {
+        max-width: 100%;
+        height: auto;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .about-container {
+        margin-top: 1.5rem;
+        line-height: 1.6;
+        font-family: Arial, sans-serif;
+        color: #333;
+    }
+
+    .about-container a {
+        color: #007bff;
+        text-decoration: none;
+    }
+
+    .about-container a:hover {
+        text-decoration: underline;
+    }
 </style>
 <body>
     <header class="header-container">
-        <h1>NYC Air BnB Price Analysis</h1>
+        <h1>NYC Airbnb Price Analysis</h1>
     </header>
-    
+
+    <main class="main-container">
+        <!-- Section for project link -->
+        <section>
+            <a href="/project/" aria-label="View the embedded Jupyter Notebook for NYC Airbnb Price Analysis">
+                <img 
+                    src="{{url_for('static', filename='images/new_york_city.jpg')}}" 
+                    alt="Aerial view of New York City" 
+                    class="responsive-image"
+                >
+            </a>
+            <p>
+                <a href="/project/">Click here</a> if the image is not accessible.
+            </p>
+        </section>
+
+        <!-- Section for about -->
+        <section class="about-container">
+            <p>
+                This application was proudly created by <strong>Dali Duraku</strong>. It is built using 
+                <a href="https://flask.palletsprojects.com/" target="_blank" rel="noopener">
+                    Flask
+                </a>, a powerful Python web framework, and is hosted seamlessly on 
+                <a href="https://www.pythonanywhere.com/" target="_blank" rel="noopener">
+                    PythonAnywhere
+                </a>.
+            </p>
+            <p>
+                Explore more by clicking the New York City image above to view my 
+                <a href="#" target="_blank" rel="noopener">
+                    embedded Jupyter Notebook
+                </a>, showcasing interactive data and insights.
+            </p>
+        </section>
+    </main>
 </body>
+
+
 </html>
